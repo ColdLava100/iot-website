@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAGE 2</title>
+	<link rel="icon" type="image/png" href="js.png">
+	<style type="text/css">
+		h1 {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		h3 {
+			text-decoration: underline;
+		}
+
+		body {
+			background-color: lightcoral;
+		}
+	</style>
+
+	<script type="text/javascript">
+		var district_list = ['Senawang','Seremban'];
+		
+		function askname() {
+			 name = prompt("Name : ");
+
+			document.getElementById("nameoutput").innerHTML = "Nice to meet you  " + name
+		}
+
+
+		function askcondition(){
+			condition = prompt("Lapar tak? (Ya/Tidak): ")
+
+			document.getElementById("answer").innerHTML = "Jawapan = " + condition
+
+			if (condition == "Ya" || condition == "ya"){
+			document.getElementById("conditionoutput").innerHTML = "Makan laa"
+			}
+
+			else if (condition == "Tak" || condition == "tak"){
+				document.getElementById("conditionoutput").innerHTML = "Alhamdullilah kenyang"
+			}
+
+			else{
+				document.getElementById("conditionoutput").innerHTML = "Tak faham, cuba lukis"
+			}
+
+		}
+
+		function district_display() {
+			document.getElementById("displaydis").innerHTML = district_list.join(',');
+		}
+
+		function add_district(){
+			var new_district = prompt("Enter district : ");
+			district_list.push(new_district)
+			document.getElementById("displaydis").innerHTML = district_list.join(',');
+
+		}
+
+		function remove_last_district(){
+			district_list.pop(district_list)
+			document.getElementById("displaydis").innerHTML = district_list.join(',');
+
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<h1 align="center">Sifir Matematik</h1>
+	<h1 style="background-color: white;"></h1>
+	<script type="text/javascript">
+		document.write("<div style = 'display: flex;'>") //allow for table to be display side by side
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 1 =" + i * 1 + "</td>");
+			document.write("</tr>")
+		}
+
+		document.write("</table>");
+
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 2 =" + i * 2 + "</td>");
+			document.write("</tr>");
+		}
+
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 3 =" + i * 3 + "</td>");
+			document.write("</tr>");
+		}
+
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 4 =" + i * 4 + "</td>");
+			document.write("</tr>");
+		}
+
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 5 =" + i * 5 + "</td>");
+			document.write("</tr>");
+		}
+
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 6 =" + i * 6 + "</td>");
+			document.write("</tr>");
+		}
+
+
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 7 =" + i * 7 + "</td>");
+			document.write("</tr>");
+		}
+
+		document.write("<table border='1' style='background-color: black; margin-right: 10px;'>");
+		document.write("<tr><th style='background-color: yellow;'>Number</th><th style='background-color: yellow;'>Multiplication</th></tr>");
+
+
+		for(var i=0;i<13;i++){
+			document.write("<tr style='background-color: white;'>");
+			document.write("<td>" + i + "</td>");
+			document.write("<td>" + i + " x 8 =" + i * 8 + "</td>");
+			document.write("</tr>");
+		}
+
+		document.write("</table>");
+		document.write("</div>");
+	</script><br>
+
+	<hr style="height: 3px; background-color: black;">
+
+	<input type="button" onclick="askname()" value="Enter Name">
+	<p id="nameoutput"></p>
+	<input type="button" onclick="askcondition()" value="Condition">
+	<p id="answer"></p>
+	<p id="conditionoutput"></p>
+
+
+	<hr style="height: 3px; background-color: black;">
+
+	<input type="button" onclick="district_display()" value="Display District">
+	<input type="button" onclick="add_district()" value="Add District">
+	<input type="button" onclick="remove_last_district()" value="Remove Last District">
+	<p id="displaydis"></p>
+
+	<hr style="height: 3px; background-color: black;">
+	<ul>
+		<li>gunakan java dan css dalam nota slide sahaja, madam nak kita create satu page yg dlm 1 page tu kene ada function, kene ada looping, kene ada conditional statement, kene ada input, kene ada array.</li>
+	</ul>
+	
+	<hr style="height: 10px; background-color: black;"><br>
+	<a href="scripting.html">|PAGE 1|</a>
+	<a href="page2.html"> |PAGE 2|</a>
+	<a href="page3.html">|PAGE 3| <<<</a>
+	<a href="page4.html">|PAGE 4|</a>
+
+</body>

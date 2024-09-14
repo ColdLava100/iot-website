@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAGE 2</title>
+	<link rel="icon" type="image/png" href="js.png">
+	<style type="text/css">
+		h1 {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		h3 {
+			text-decoration: underline;
+		}
+	</style>
+
+	<script type="text/javascript"> 
+		var age2;
+		var ticket = 20;
+
+		function askage(){
+			ticket = 20;
+			age2 = prompt("Enter your age : ");
+			document.getElementById("ageoutput").innerHTML = "Your age is : " + age2 //update the content dynamically / madam tak ajar lagi getElementById!
+
+
+		}
+
+		function ticketprice(){
+
+			var ticket_price;
+
+			if (age2<18){
+				ticket_price = ticket /2;
+			}
+
+			else if (age2 >=19 && age2<=40){
+				ticket_price = ticket
+			}
+
+			else if (age2>=41 && age2<=65){
+				ticket_price = ticket *0.75
+			}
+
+			else{
+				ticket_price = ticket / 2
+			}
+
+			//display the ticket price
+			document.getElementById("priceoutput").innerHTML = "Your ticket price is : RM " + ticket_price
+
+		}
+
+
+	</script>
+</head>
+
+<body>
+	<h1 align="center">Scritping</h1>
+	<ul>
+		<li><b>var</b> is used for declaring variable.</li>
+		<li>comments in js used :</li>
+		<ul>
+			<li>//single line comment</li>
+			<li>/* multi-line comment */</li>
+		</ul>
+	</ul>
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<script type="text/javascript">
+		var s = "Connie Client";
+		var Fname = s.substring(0, s.indexof("")); //"Connie"
+		var len = s.length; //13
+		var s2 = 'Melvin Merchant';
+	</script>
+
+	<img src="connie.png">
+	<img src="breakdown1.png">
+
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<script type="text/javascript">
+		var count = 10
+		var s1 = "" + count
+		var s2 = count + "bananas, ah ah ah!"
+		var n1 = parseInt ("42 is the answer")
+		var n2 = parseFloat("booyah")
+
+		document.write("count = " + count  +"<br/>")
+		document.write("s1 = " + s1 + "<br/>")
+		document.write("s2 = " + s2 + "<br/>")
+		document.write("n1 = " + n1 + "<br/>")
+		document.write("n2 = " + n2 + "<br/>")
+
+	</script><br>
+	<img src="numbertostring.png"><br>
+	<img src="stnobreak2.png">
+
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<script type="text/javascript">
+		//how to create variable
+		//string
+		var name = "Farhana";
+		document.write(name);
+		document.write("<br/>");
+
+		//operation - string(+) - concatenation
+		var message = "my name is " + name;
+		document.write(message);
+		document.write("<br/>");
+	</script>
+
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<script type="text/javascript">
+		//Number
+		var age = 30;
+		document.write(age);
+		document.write("<br/>");
+		document.write("<hr>");
+
+		//Operation math
+		var a = 10;
+		var b = 3;
+
+		var sum = a+b;
+		document.write("Sum = "+sum)
+		document.write("<br/>")
+	</script><br>
+	<img src="nummath.png"><br><br>
+
+
+	<script type="text/javascript">
+		
+		var minus = a-b;
+		document.write("Minus = "+minus);
+		document.write("<br/>");
+
+		var mul = a*b;
+		document.write("Multiply = "+mul);
+		document.write("<br/>");
+
+		var mod = a%b;
+		document.write("Modulus = " + mod);
+		document.write("<br/>");
+		document.write("<hr>");
+
+	</script><br>
+
+	<img src="mathcont.png">
+
+	<hr style="height: 10px; background-color: black;"><br>
+	<p>Logical and Boolean skip...</p>
+
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<script type="text/javascript">
+		
+		//value like true and false is case-sensetive
+
+		var hungry;
+		hungry = true;
+
+		if (hungry){
+			document.write("Can we have a quick lunch break?");
+		}
+
+		else
+
+		{
+			document.write("I can still handle it for a while.");
+		}
+
+	</script><br>
+
+	<img src="hungry.png">
+
+	<hr style="height: 10px; background-color: black;">
+
+	<h3>Boolean & Truth Table</h3>
+
+	<script type="text/javascript">
+		
+		//Boolean (&&, ||, !)
+		var hungry = true;
+		var sleepy = false;
+
+		document.write(hungry)
+		document.write("<br/>")
+
+		//lecturer advisable to show truth table for explanation
+
+		document.write(hungry && sleepy);
+		document.write("<br/>")
+
+		document.write(hungry || sleepy);
+		document.write("<br/>")
+
+	</script><br>
+
+	<img src="tf.png"><br>
+
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<h3>If-else</h3>
+
+	<script type="text/javascript">
+		//if else
+		var hungry = false;
+		if (hungry==true){
+			document.write("Jom Makan");
+			document.write("<br/>")
+		}
+
+		else{
+			document.write("Jom tidur");
+			document.write("<br/>");
+		}
+	</script><br>
+
+	<img src="ifelse.png">
+
+	<script type="text/javascript">
+		//if else
+		document.write("<hr>");
+		var userage = 15;
+		if (userage<13){
+			document.write("You cannot watch this movie!");
+			document.write("<br/>");
+		}
+
+		else if(userage<18){
+			document.write("You can watch this movie with your parent!");
+			document.write("<br/>")
+		}
+
+		else{
+			document.write("You can watch this movie!")
+			document.write("<br/>")
+		}
+	</script><br>
+
+	<img src="movie.png">
+
+	<hr style="height: 10px; background-color: black;"><br>
+	<img src="exercise.png"><br>
+	<ul>
+		<li>prompt() is used in Javascript to get user input</li>
+		<li>the age display down below uses combination of Javascript document.getElementById and HTML id= syntax (madam belum ajar)</li>
+	</ul>
+
+
+	<input type="button" onclick="askage()" value="Enter Age">
+	<input type="button" onclick="ticketprice()" value="Ticket Price">
+	<p id="ageoutput"></p>
+	<p id="priceoutput"></p><br>
+
+	<img src="operator.png"><br>
+	<img src="operator2.png">
+
+	<hr style="height: 10px; background-color: black;">
+	<h3>Loop</h3>
+
+	<script type="text/javascript">
+		document.write("<hr>")
+		document.write("For loop: <br/>");
+
+		for(var i=0;i<10;i++){
+			document.write(i);
+			document.write("<br/>");
+		}
+		document.write("<hr>")
+	</script>
+
+	<hr style="height: 10px; background-color: black;">
+	<h3>Exercise Multiplication Table</h3>
+
+	<script type="text/javascript">
+		
+		for (var i=0;i<12;i++){
+			document.write(i + " x 3 = " + i*3)
+			document.write("<br/>")
+		}
+	</script><br>
+	<img src="multiply.png">
+
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<hr style="height: 10px; background-color: black;"><br>
+	<a href="scripting.html">|PAGE 1|</a>
+	<a href="page2.html"> <<< |PAGE 2|</a>
+	<a href="page3.html">>>> |PAGE 3|</a>
+	<a href="page4.html">|PAGE 4|</a>
+</body>

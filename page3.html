@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAGE 2</title>
+	<link rel="icon" type="image/png" href="js.png">
+	<style type="text/css">
+		h1 {
+			font-weight: bold;
+			text-decoration: underline;
+		}
+
+		h3 {
+			text-decoration: underline;
+		}
+	</style>
+
+	<script type="text/javascript">
+		//function
+		//interpolation = guna single quote sebelah no.1 kat keyboard ``
+		document.write(`Hello ${name}`);
+
+		function tambah(a,b) {
+			return a+b;
+		}
+
+			document.write(tambah(10,3));
+		document.write("<br/>")
+
+
+		function areaVolume(length, width, height){
+			return[length*width, length*width*height];
+		}
+
+			document.write("Area = " + areaVolume(2,3,5))
+		document.write("<br/>");
+	</script>
+
+
+<body>
+	<h3>Arrays</h3>
+	<script type="text/javascript">
+		//arrays
+		var scores = [40,10,50,70,90];
+		document.write(scores);
+		document.write("<br/>")
+
+		//add an item at the end of an array
+		scores.push(80);
+		document.write(scores);
+		document.write("<br/>");
+
+		//get the length of an item of an array
+		document.write("list length : " + scores.length);
+		document.write("<br>");
+
+		//remove the last time item from an array list
+		scores.pop();
+		document.write(scores);
+		document.write("<br/>")
+
+		//scores.splice (bermula index mana, berapa banyak item nak buang)
+		scores.splice(1,1);
+		document.write("using splice: " + scores);
+		document.write("<br/>")
+	</script>
+	<img src="array.png"><br>
+
+
+	<hr style="height: 10px; background-color: black;"><br>
+
+	<script type="text/javascript">
+		var scores = [40,10,50,70,90];
+		document.write(scores);
+		document.write("<br/>")
+
+		//looping array
+		for(var i=0;i<scores.length;i++){
+			document.write(scores[i]);
+			document.write("<br/>");
+		}
+
+		//looping array using forEach() method
+		//it functional as looping array above
+		document.write("For Each:");
+		scores.forEach(scores=>
+		{
+			document.write("<br>"+scores);
+			document.write("<br/>");
+		});
+	</script>
+	<img src="loop.png">
+
+	<hr style="height: 10px; background-color: black;"><br>
+	<a href="scripting.html">|PAGE 1|</a>
+	<a href="page2.html"> |PAGE 2|</a>
+	<a href="page3.html"><<< |PAGE 3|</a>
+	<a href="page4.html">>>> |PAGE 4|</a>
+</body>
+</html>
